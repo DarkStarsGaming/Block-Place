@@ -9,6 +9,10 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+_G.Player1 = "string"
+_G.Player2 = "string"
+_G.Coordinates = "string"
+
 -- Script
 
 function MakeScriptHub()
@@ -57,6 +61,78 @@ function MakeScriptHub()
           end    
     })
     
+    -- Teleporting
+
+    local Teleport = ScriptHub:MakeTab({
+        Name = "Teleporting",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Teleport:AddLabel("Teleport player to another player")
+
+    Teleport:AddTextbox({
+        Name = "Player1",
+        Default = "",
+        TextDisappear = false,
+        Callback = function(Value)
+            _G.Player1 = Value
+        end
+    })
+
+    Teleport:AddTextbox({
+        Name = "Player2",
+        Default = "",
+        TextDisappear = false,
+        Callback = function(Value)
+            _G.Player2 = Value
+        end
+    })
+
+    Teleport:AddButton({
+        Name = "Teleport Player",
+        Callback = function()
+            local args = {
+                [1] = ">teleport ".._G.Player1.." ".._G.Player2.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
+          end    
+    })
+
+    Teleport:AddLabel("Teleport player to coordinates")
+
+    Teleport:AddTextbox({
+        Name = "Player",
+        Default = "",
+        TextDisappear = false,
+        Callback = function(Value)
+            _G.Player1 = Value
+        end
+    })
+
+    Teleport:AddTextbox({
+        Name = "Coordinates",
+        Default = "",
+        TextDisappear = false,
+        Callback = function(Value)
+            _G.Coordinates = Value
+        end
+    })
+
+    Teleport:AddButton({
+        Name = "Teleport Player",
+        Callback = function()
+            local args = {
+                [1] = ">tp ".._G.Player1.." ".._G.Coordinates.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
+          end    
+    })
+
     -- Player Configuration
     local Player = ScriptHub:MakeTab({
         Name = "Player",
@@ -164,4 +240,3 @@ Tab:AddButton({
         end
     end
 })
-
