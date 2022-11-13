@@ -139,7 +139,7 @@ function MakeScriptHub()
         PremiumOnly = false
     })
     
-    AdminCommandsTab:AddTextbox({
+    Troll:AddTextbox({
         Name = "Messgui",
         Default = "",
         TextDisappear = true,
@@ -153,7 +153,7 @@ function MakeScriptHub()
         end
     })
 
-    AdminCommandsTab:AddTextbox({
+    Troll:AddTextbox({
         Name = "Kill",
         Default = "",
         TextDisappear = true,
@@ -167,7 +167,7 @@ function MakeScriptHub()
         end
     })
 
-    AdminCommandsTab:AddTextbox({
+    Troll:AddTextbox({
         Name = "Kick",
         Default = "",
         TextDisappear = true,
