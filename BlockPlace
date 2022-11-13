@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "KeySystem"})
 
 OrionLib:MakeNotification({
 	Name = "Logged in!",
@@ -9,14 +9,26 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-_G.Player1 = "string"
-_G.Player2 = "string"
-_G.Coordinates = "string"
-
 -- Script
+function BlockPlace()
+    _G.Player1 = "string"
+    _G.Player2 = "string"
+    _G.Coordinates = "string"
+    _G.autoAction = true
 
-function MakeScriptHub()
-    local ScriptHub = OrionLib:MakeWindow({Name = "Block Place | DarkStarsGaming#6722", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroText = "Dark's Script", ConfigFolder = "OrionTest"})
+    function autoAction()
+        while _G.autoAction == true do
+            wait(62)
+            local args = {
+                [1] = ">getactions",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))  
+        end
+    end
+
+    local ScriptHub = OrionLib:MakeWindow({Name = "Block Place | DarkStarsGaming#6722", HidePremium = false, IntroEnabled = true, IntroText = "Dark's Script", SaveConfig = true, ConfigFolder = "BlockPlace"})
 
     -- Admin Commands
     local AdminCommandsTab = ScriptHub:MakeTab({
@@ -34,7 +46,17 @@ function MakeScriptHub()
             }
             
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
-          end    
+        end    
+    })
+
+    AdminCommandsTab:AddToggle({
+        Name = "Auto Actions!",
+        Default = false,
+        Callback = function(Value)
+            print(Value)
+            _G.autoAction = Value
+            autoAction()
+        end    
     })
 
     AdminCommandsTab:AddButton({
@@ -46,7 +68,7 @@ function MakeScriptHub()
             }
             
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
-          end    
+        end    
     })
 
     AdminCommandsTab:AddButton({
@@ -58,7 +80,7 @@ function MakeScriptHub()
             }
             
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
-          end    
+        end    
     })
 
     AdminCommandsTab:AddTextbox({
@@ -218,7 +240,7 @@ function MakeScriptHub()
             }
             
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
-          end    
+        end    
     })
 
     Teleport:AddLabel("Teleport player to coordinates")
@@ -250,7 +272,7 @@ function MakeScriptHub()
             }
             
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
-          end    
+        end    
     })
 
     -- Player Configuration
@@ -300,7 +322,7 @@ function MakeScriptHub()
         Name = "Destroy UI!",
         Callback = function()
             OrionLib:Destroy()
-          end    
+        end    
     })    
 end
 
@@ -354,9 +376,13 @@ Tab:AddButton({
     Callback = function()
         if _G.KeyInput == _G.Key then
             CorrectKeyNotification()
-            MakeScriptHub()
+            if game.PlaceId == 11424205505 then
+                BlockPlace()
+            end
         else
             InCorrectKeyNotification()
         end
     end
 })
+
+OrionLib:Init()
