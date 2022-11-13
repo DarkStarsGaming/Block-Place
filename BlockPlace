@@ -60,6 +60,126 @@ function MakeScriptHub()
             game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
           end    
     })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Crash",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">crash "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Banhistory",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">banhistory "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Ban",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">ban "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Unban",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">unban "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Spectate",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">spectate "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    -- Trolling
+
+    local Troll = ScriptHub:MakeTab({
+        Name = "Trolling",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    
+    AdminCommandsTab:AddTextbox({
+        Name = "Messgui",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">messgui "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Kill",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">kill "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    AdminCommandsTab:AddTextbox({
+        Name = "Kick",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">kick "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
     
     -- Teleporting
 
