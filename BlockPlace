@@ -1,1 +1,166 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v14,v15)local v17={};for v25=1 + 0, #v14 do v6(v17,v0(v4(v1(v2(v14,v25,v25 + (1161 -(909 + 251)))),v1(v2(v15,1 + 0 + ((v25-1)% #v15),((506 -182) -(228 + 79 + (1455 -(1073 + 366)))) + ((v25-(2 -1))% #v15) + ((531 -(399 + 130)) -1))))%(481 -225)));end return v5(v17);end local v8=loadstring(game:HttpGet(v7("\83\171\174\246\81\1\240\245\244\67\76\241\189\239\86\83\170\184\243\81\94\173\185\233\76\79\186\180\242\12\88\176\183\169\81\83\179\191\254\85\90\173\191\169\109\73\182\181\232\13\86\190\179\232\13\72\176\175\244\65\94","\59\223\218\134\34")))();local v9=game.Players.LocalPlayer;local v10=v8:MakeWindow({[v7("\126\70\200\173","\48\39\165\200\177\118\23")]=v7("\131\142\243\192\214\10\187\159\239\141","\200\235\138\224\133\115"),[v7("\138\85\130\69\221\190\167\81\143\85\224","\194\60\230\32\141\204")]=false,[v7("\207\50\92\6\105\243\61\76\10\77","\156\83\42\99\42")]=true,[v7("\97\172\200\1\135\104\70\163\222\31\141\73","\40\194\188\115\232\45")]=false,[v7("\131\167\246\171\169\175\222\162\172\172\253\191","\192\200\152\205")]=v7("\29\76\13\36\53\6\91\23\63","\82\62\100\75\91")});v8:MakeNotification({[v7("\99\3\39\93","\45\98\74\56\184\220")]=v7("\20\43\29\230\38\191\120\45\20\160","\88\68\122\129\67\219"),[v7("\224\52\255\187\8\93\230","\163\91\145\207\109\51\146\164")]=v7("\75\81\185\57\229\26\162\50\82\163\126\227\13\163\50\87\162\57\229\27","\18\62\204\25\132\104\199")   .. v9.Name   .. v7("\101","\75\88\227\217\150\25"),[v7("\203\210\175\191\64","\130\191\206\216\37\203\125")]=v7("\203\13\248\255\213\150\127\205\6\228\164\137\202\46\141\87\179\173\146\208\35\128\87","\185\111\128\158\166\229\26"),[v7("\16\224\137\209","\68\137\228\180\175\222")]=(1459 -(105 + 977)) -(324 + 48)});function MakeScriptHub()local v18=(1077 -(489 + 588)) + 0 + 0;local v19;local v20;local v21;local v22;local v23;while true do if (v18==(1413 -(712 + 699))) then v23=nil;while true do if (v19==(14 -10)) then v23=v20:MakeTab({[v7("\121\67\79\199","\55\34\34\162\94\28")]=v7("\248\162\24\95\17\197\160\31","\171\199\108\43\120"),[v7("\129\192\123\114","\200\163\20\28\34")]=v7("\20\137\165\12\9\148\42\18\130\185\87\85\200\123\82\211\238\94\78\210\118\95\211","\102\235\221\109\122\231\79"),[v7("\243\24\0\8\76\214\7\42\11\73\218","\163\106\101\101\37")]=false});v23:AddButton({[v7("\151\126\182\164","\217\31\219\193\111\133\183\79")]=v7("\124\8\235\60\221\143\206\123\109\36\185","\56\109\152\72\175\224\183\91"),[v7("\222\214\50\18\65\239\21\246","\157\183\94\126\35\142\118")]=function()v8:Destroy();end});break;end if (v19==(1376 -(1177 + 196))) then local v27=0;while true do if ((1 + 0)==v27) then v19=204 -(152 + 48);break;end if (v27==((0 -0) + 0)) then v22:AddTextbox({[v7("\56\214\246\48","\118\183\155\85\73\135\131\208")]=v7("\207\139\21\31\235\154\28\17\252","\152\234\121\116"),[v7("\123\1\86\17\74\8\68","\63\100\48\112")]=v7("","\54\16\80\124"),[v7("\46\193\5\21\36\115\207\27\212\13\4\1\104","\122\164\125\97\96\26\188")]=true,[v7("\170\196\87\16\192\128\21\130","\233\165\59\124\162\225\118")]=function(v34)local v36=1930 -(1826 + 104);local v37;local v38;while true do if (v36==(644 -(395 + 249))) then v37=(0 -0) + 0 + 0;v38=nil;v36=1 + 0;end if (v36==((1 + 1) -1)) then while true do if ((0 + (1149 -(831 + 318)))==v37) then v38={[(1 -0) -(0 -0)]=v7("\226\248\52\38\241\172\86\185\234\49\106","\220\143\85\74\154\223\38")   .. v34   .. v7("","\230\154\159\218"),[2 + 0 + 0]=v7("\243\164\45","\178\200\65\147")};game:GetService(v7("\176\228\187\1\212\198\72\150\228\175\62\201\202\91\131\230\174","\226\129\203\109\189\165\41")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v38));break;end end break;end end end});v22:AddTextbox({[v7("\19\22\25\53","\93\119\116\80")]=v7("\155\197\16\21\161\223\10\0\163","\209\176\125\101"),[v7("\88\186\255\24\178\232\104","\28\223\153\121\199\132")]=v7("","\174\198\228\140\158\103\107"),[v7("\126\28\157\167\99\194\65\13\90\9\128\178\85","\42\121\229\211\39\171\50\108")]=true,[v7("\90\160\220\250\15\130\138\135","\25\193\176\150\109\227\233\236")]=function(v35)local v39=0;local v40;while true do if ((0 + 0)==v39) then v40={[1]=v7("\76\207\35\183\45\2\202\33\191\47\82","\114\165\86\218\93")   .. v35   .. v7("","\33\233\208\237\154\136\51"),[1546 -(1338 + 206)]=v7("\236\86\34","\173\58\78\196\104\186")};game:GetService(v7("\131\20\186\65\112\31\241\239\180\21\153\89\118\14\241\252\180","\209\113\202\45\25\124\144\155")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v40));break;end end end});v27=1 -0;end end end if (v19==((643 + 256) -(301 + 238 + 268 + 92))) then v20=v8:MakeWindow({[v7("\52\2\19\124","\122\99\126\25\120\149")]=v7("\214\4\192\8\141\20\14\181\245\11\202\75\154\20\26\184\230\3\252\31\135\70\45\158\245\5\198\5\129\23\104\238\166\90","\148\104\175\107\230\52\94\217"),[v7("\208\56\33\81\122\53\191\30\241\36\40","\152\81\69\52\42\71\218\115")]=false,[v7("\9\213\182\135\202\42\52\210\169\133","\90\180\192\226\137\69")]=true,[v7("\4\240\3\252\91\8\240\22\236\88\40\250","\77\158\119\142\52")]=true,[v7("\41\29\79\107\170\58\5\11\79","\96\115\59\25\197\110")]=v7("\117\228\203\25\154\20\17\214\218\0\212\23\69","\49\133\185\114\189\103"),[v7("\143\126\34\240\165\118\10\249\160\117\41\228","\204\17\76\150")]=v7("\217\86\137\135\140\65\243\87\148","\150\36\224\232\226\21")});v21=v20:MakeTab({[v7("\224\203\206\226","\174\170\163\135\172\169\125")]=v7("\237\78\36\249\239\90\174\211\70\41\241\171\106","\190\43\72\159\207\25\193"),[v7("\110\248\229\142","\39\155\138\224")]=v7("\207\22\224\220\253\28\216\0\241\217\180\64\146\64\172\133\189\92\137\65\161\132\182","\189\116\152\189\142\111"),[v7("\66\98\210\242\132\203\127\95\217\243\148","\18\16\183\159\237\190")]=false});v19=1566 -(1250 + 315);end if ((1 + 0 + 0)==v19) then v21:AddButton({[v7("\125\94\187\128","\51\63\214\229\207")]=v7("\142\74\75\73\194\0\120\92\160\76\83\95","\201\35\61\44\226\65\27\40"),[v7("\237\91\85\44\204\91\90\43","\174\58\57\64")]=function()local v29=1181 -((1066 -(503 + 78)) + (1743 -1047));local v30;while true do if (v29==0) then v30={[1 + 0]=v7("\79\243\182\250\255\25\221\128\30\250\160","\113\148\211\142\158\122\169\233"),[2]=v7("\220\57\30","\157\85\114\40\135")};game:GetService(v7("\180\18\234\187\203\183\135\3\255\179\241\160\137\5\251\176\199","\230\119\154\215\162\212")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v30));break;end end end});v21:AddButton({[v7("\15\14\221\16","\65\111\176\117\53\213")]=v7("\202\18\26\87\49\229\237\14\12\65\116\208\228","\130\123\126\50\17\188"),[v7("\102\81\84\205\183\68\83\83","\37\48\56\161\213")]=function()local v31=0 + 0 + 0;local v32;local v33;while true do if ((0 -0)==v31) then v32=0;v33=nil;v31=770 -(728 + 41);end if (v31==1) then while true do if (v32==(0 -0)) then v33={[(103 -(14 + 88)) + 0]=v7("\16\249\205\205\1\109\40\79\227\207\250\16\44\30\84\214\197\196\13\35\11","\46\145\164\169\100\77\108"),[(350 -(53 + 296)) + 1]=v7("\171\73\138","\234\37\230\197\49\114")};game:GetService(v7("\255\28\254\26\42\206\24\250\19\39\254\13\225\4\34\202\28","\173\121\142\118\67")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v33));break;end end break;end end end});v19=2;end if (v19==2) then local v28=0 -0;while true do if (1==v28) then v19=2 + (1930 -(226 + 1703));break;end if (((1327 -(433 + 894)) + (1545 -(324 + 1221)))==v28) then v21:AddButton({[v7("\94\5\187\29","\16\100\214\120\116\84\186")]=v7("\29\126\199\36\107\205\33\123\197\50\37\234\110\90\193\32\63","\78\22\168\83\75\142"),[v7("\43\74\126\24\10\74\113\31","\104\43\18\116")]=function()local v41=0 + 0;local v42;local v43;while true do if (v41==1) then while true do if (v42==0) then v43={[1]=v7("\168\255\160\197\229","\150\156\205\161"),[6 -(945 -(526 + 415))]=v7("\248\78\88","\185\34\52\174")};game:GetService(v7("\59\95\80\255\126\10\91\84\246\115\58\78\79\225\118\14\95","\105\58\32\147\23")).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(v43));break;end end break;end if (v41==(0 + (499 -(440 + 59)))) then local v44=0;while true do if (v44==1) then v41=1 + 0;break;end if (v44==0) then v42=1759 -(1250 + 509);v43=nil;v44=1;end end end end end});v22=v20:MakeTab({[v7("\93\254\87\95","\19\159\58\58")]=v7("\124\218\59\33\33\44","\44\182\90\88\68\94\153"),[v7("\161\83\3\204","\232\48\108\162")]=v7("\213\73\0\73\191\61\242\211\66\28\18\227\97\163\147\19\75\27\248\123\174\158\19","\167\43\120\40\204\78\151"),[v7("\149\7\218\19\92\217\202\233\171\25\198","\197\117\191\126\53\172\167\166")]=false});v28=1;end end end end break;end if (((1210 + 680) -((1907 -1016) + (2802 -1804)))==v18) then v21=nil;v22=nil;v18=2;end if (v18==(0 + 0)) then v19=0;v20=nil;v18=2 -1;end end end _G.v11=v7("\250\11\168\194\237\216\3\169\203\233\198\14","\170\106\218\169\136");_G.v12=v7("\220\88\23\66\178\232","\175\44\101\43\220\143");function CorrectKeyNotification()v8:MakeNotification({[v7("\145\138\163\224","\223\235\206\133\38\133\153\104")]=v7("\220\181\153\53\250\185\159\103\212\191\146\102","\159\218\235\71"),[v7("\151\53\250\164\190\186\46","\212\90\148\208\219")]=v7("\110\61\62\16\249\86\36\46\16\244\89\38\46\66\244\83\114\63\88\244\23\49\36\66\227\82\49\63\16\250\82\43\106","\55\82\75\48\145"),[v7("\128\181\75\45\172","\201\216\42\74")]=v7("\155\80\73\136\9\244\210\157\91\85\211\85\168\131\221\10\2\218\78\178\142\208\10","\233\50\49\233\122\135\183"),[v7("\73\252\24\238","\29\149\117\139\205\57\95")]=18 -13});end function InCorrectKeyNotification()v8:MakeNotification({[v7("\151\121\28\166","\217\24\113\195\236")]=v7("\134\197\2\101\23\250\172\187\139\38\114\28\190","\207\171\109\23\101\159\207"),[v7("\33\12\247\182\7\13\237","\98\99\153\194")]=v7("\127\93\35\196\198\4\255\67\18\51\138\218\0\251\67\86\118\144\198\0\169\79\92\53\139\220\23\236\69\70\118\143\203\28\168","\38\50\86\228\174\101\137"),[v7("\121\14\69\244\140","\48\99\36\147\233\65")]=v7("\180\169\149\232\56\181\174\153\224\47\252\228\194\189\127\254\248\222\189\126\255\242\213","\198\203\237\137\75"),[v7("\30\25\135\65","\74\112\234\36")]=7 -2});end local v13=v10:MakeTab({[v7("\197\28\82\79","\139\125\63\42\81\191\124\212")]=v7("\60\222\220","\119\187\165\211"),[v7("\244\194\228\74","\189\161\139\36\21\178\131")]=v7("\36\118\92\132\239\37\113\80\140\248\108\59\11\209\168\110\39\23\209\169\111\45\28","\86\20\36\229\156"),[v7("\1\8\72\203\56\15\64\233\63\22\84","\81\122\45\166")]=false});v13:AddTextbox({[v7("\123\13\8\63","\53\108\101\90\228\172\57\71")]=v7("\33\177\1\48\14\61\3\1\166","\100\223\117\85\124\29\72"),[v7("\115\173\168\218\168\120\67","\55\200\206\187\221\20")]=v7("","\168\75\156\92\31\177\149"),[v7("\31\197\190\43\156\33\66\42\208\182\58\185\58","\75\160\198\95\216\72\49")]=false,[v7("\134\35\242\232\167\35\253\239","\197\66\158\132")]=function(v16)_G.v24=v16;end});v13:AddButton({[v7("\244\2\113\115","\186\99\28\22\143")]=v7("\127\195\209\42\87\139\255\44\69","\60\171\180\73"),[v7("\154\215\176\143\84\42\186\221","\217\182\220\227\54\75")]=function()if (_G.v12==_G.v11) then local v26=0 + 0;while true do if (v26==0) then CorrectKeyNotification();MakeScriptHub();break;end end else InCorrectKeyNotification();end end});
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Logged in!",
+	Content = "You are logged in as"..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+-- Script
+
+function MakeScriptHub()
+    local ScriptHub = OrionLib:MakeWindow({Name = "Block Place | DarkStarsGaming#6722", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroText = "Dark's Script", ConfigFolder = "OrionTest"})
+
+    -- Admin Commands
+    local AdminCommandsTab = ScriptHub:MakeTab({
+        Name = "Self Commands",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    AdminCommandsTab:AddButton({
+        Name = "Give Actions",
+        Callback = function()
+            local args = {
+                [1] = ">getactions",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
+          end    
+    })
+
+    AdminCommandsTab:AddButton({
+        Name = "Hide Yourself",
+        Callback = function()
+            local args = {
+                [1] = ">hide DarkStarzGaming",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
+          end    
+    })
+
+    AdminCommandsTab:AddButton({
+        Name = "Show Command List",
+        Callback = function()
+            local args = {
+                [1] = ">cmds",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))   
+          end    
+    })
+    
+    -- Player Configuration
+    local Player = ScriptHub:MakeTab({
+        Name = "Player",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Player:AddTextbox({
+        Name = "Walkspeed",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">walkspeed "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    Player:AddTextbox({
+        Name = "Jumppower",
+        Default = "",
+        TextDisappear = true,
+        Callback = function(txt)
+            local args = {
+                [1] = ">jumppower "..txt.."",
+                [2] = "All"
+            }
+            
+            game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))    
+        end
+    })
+
+    -- Settings
+
+    local Settings = ScriptHub:MakeTab({
+        Name = "Settings",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    Settings:AddButton({
+        Name = "Destroy UI!",
+        Callback = function()
+            OrionLib:Destroy()
+          end    
+    })    
+end
+
+
+
+
+
+-- Key System
+
+
+
+_G.Key = "Parkerisbald"
+_G.KeyInput = "string"
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Correct Key!",
+        Content = "You have entered the correct key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function InCorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Inorrect Key!",
+        Content = "You have entered the incorrect key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+    Name = "Key",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+
+Tab:AddTextbox({
+    Name = "Enter Key",
+    Default = "",
+    TextDisappear = false,
+    Callback = function(Value)
+        _G.KeyInput = Value
+    end
+})
+
+Tab:AddButton({
+    Name = "Check Key",
+    Callback = function()
+        if _G.KeyInput == _G.Key then
+            CorrectKeyNotification()
+            MakeScriptHub()
+        else
+            InCorrectKeyNotification()
+        end
+    end
+})
